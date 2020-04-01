@@ -1,0 +1,433 @@
+{
+	"name": "symfony-super-console",
+	"displayName": "Symfony Console Run All Symfony Commands",
+	"description": "",
+	"version": "1.0.0",
+	"engines": {
+		"vscode": "^1.43.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+		"*"
+	],
+	"main": "./extension.js",
+	"contributes": {
+		"commands": [
+			{
+				"command": "SymfonyConsole.openView",
+				"title": "Open Console"
+			},
+			{
+				"command": "SymfonyConsole.makeController",
+				"title": "make:controller",
+				"category": "Symfony"
+			},
+			{
+				"command": "SymfonyConsole.makeEntity",
+				"title": " make:entity",
+				"category": "Symfony"
+			},
+			{
+				"command": "SymfonyConsole.assetInstall",
+				"title": "  assets:install",
+				"category": "Symfony"
+			},
+			{
+				"command": "SymfonyConsole.clearCache",
+				"title": " cache:clear",
+				"category": "Symfony"
+			},
+			{
+				"command": "SymfonyConsole.clearPoolCache",
+				"title": " cache:pool:clear",
+				"category": "Symfony"
+			},
+			{
+				"command": "SymfonyConsole.poolDelete",
+				"title": "cache:pool:delete ",
+				"category": "Symfony"
+			},
+			{
+				"command": "SymfonyConsole.poolList",
+				"title": " cache:pool:list ",
+				"category": "Symfony"
+			},
+			{
+				"command": "SymfonyConsole.poolPrune",
+				"title": " cache:pool:prune",
+				"category": "Symfony"
+			},
+			{
+				"command": "SymfonyConsole.warmupCache",
+				"title": " cache:warmup",
+				"category": "Symfony"
+			},
+			{
+				"command": "SymfonyConsole.configDump",
+				"title": " config:dump-reference",
+				"category": "Symfony"
+			},
+			{
+				"command": "SymfonyConsole.debugAutowiring",
+				"title": " debug:autowiring",
+				"category": "Symfony"
+			},
+			{
+				"command": "SymfonyConsole.debugConfig",
+				"title": " debug:config",
+				"category": "Symfony"
+			},
+			{
+				"command": "SymfonyConsole.debugContainer",
+				"title": " debug:container",
+				"category": "Symfony"
+			},
+			{
+				"command": "SymfonyConsole.debugEventDispatcher",
+				"title": " debug:event-dispatcher",
+				"category": "Symfony"
+			},
+			{
+				"command": "SymfonyConsole.debugForm",
+				"title": " debug:form",
+				"category": "Symfony"
+			},
+			{
+				"command": "SymfonyConsole.debugRouter",
+				"title": " debug:router",
+				"category": "Symfony"
+			},
+			{
+				"command": "SymfonyConsole.debugTranslation",
+				"title": " debug:translation",
+				"category": "Symfony"
+			},
+			{
+				"command": "SymfonyConsole.debugTwig",
+				"title": " debug:twig",
+				"category": "Symfony"
+			},
+			{
+				"command": "SymfonyConsole.doctrineClearCol",
+				"title": "  doctrine:cache:clear-collection-region",
+				"category": "Symfony"
+			},
+			{
+				"command": "SymfonyConsole.doctrineClearEntity",
+				"title": "  doctrine:cache:clear-entity-region",
+				"category": "Symfony"
+			},
+			{
+				"command": "SymfonyConsole.doctrineClearMeta",
+				"title": " doctrine:cache:clear-metadata",
+				"category": "Symfony"
+			},
+			{
+				"command": "SymfonyConsole.doctrineClearQuery",
+				"title": " doctrine:cache:clear-query",
+				"category": "Symfony"
+			},
+			{
+				"command": "SymfonyConsole.doctrineClearRegoin",
+				"title": "  doctrine:cache:clear-query-region",
+				"category": "Symfony"
+			},
+			{
+				"command": "SymfonyConsole.doctrineClearResult",
+				"title": " doctrine:cache:clear-result",
+				"category": "Symfony"
+			},
+			{
+				"command": "SymfonyConsole.doctrineCreate",
+				"title": " doctrine:database:create",
+				"category": "Symfony"
+			},
+			{
+				"command": "SymfonyConsole.doctrineDrop",
+				"title": " doctrine:database:drop",
+				"category": "Symfony"
+			},
+			{
+				"command": "SymfonyConsole.doctrineImport",
+				"title": "doctrine:database:import",
+				"category": "Symfony"
+			},
+			{
+				"command": "SymfonyConsole.doctrineProdSettings",
+				"title": "doctrine:ensure-production-settings",
+				"category": "Symfony"
+			},
+			{
+				"command": "SymfonyConsole.doctrineFixturesLoad",
+				"title": " doctrine:fixtures:load",
+				"category": "Symfony"
+			},
+			{
+				"command": "SymfonyConsole.mappingConvert",
+				"title": "doctrine:mapping:convert",
+				"category": "Symfony"
+			},
+			{
+				"command": "SymfonyConsole.mappingImport",
+				"title": " doctrine:mapping:import ",
+				"category": "Symfony"
+			},
+			{
+				"command": "SymfonyConsole.mappingInfo",
+				"title": "doctrine:mapping:info",
+				"category": "Symfony"
+			},
+			{
+				"command": "SymfonyConsole.migDiff",
+				"title": "doctrine:migrations:diff",
+				"category": "Symfony"
+			},
+			{
+				"command": "SymfonyConsole.migExe",
+				"title": "doctrine:migrations:execute",
+				"category": "Symfony"
+			},
+			{
+				"command": "SymfonyConsole.migDump",
+				"title": "doctrine:migrations:dump-schema",
+				"category": "Symfony"
+			},
+			{
+				"command": "SymfonyConsole.migGen",
+				"title": " doctrine:migrations:generate",
+				"category": "Symfony"
+			},
+			{
+				"command": "SymfonyConsole.migLat",
+				"title": "doctrine:migrations:latest",
+				"category": "Symfony"
+			},
+			{
+				"command": "SymfonyConsole.migMigrate",
+				"title": "doctrine:migrations:migrate",
+				"category": "Symfony"
+			},
+			{
+				"command": "SymfonyConsole.migRollup",
+				"title": "doctrine:migrations:rollup",
+				"category": "Symfony"
+			},
+			{
+				"command": "SymfonyConsole.migStat",
+				"title": "doctrine:migrations:status",
+				"category": "Symfony"
+			},
+			{
+				"command": "SymfonyConsole.migUpToDate",
+				"title": "doctrine:migrations:up-to-date",
+				"category": "Symfony"
+			},
+			{
+				"command": "SymfonyConsole.migVersion",
+				"title": "doctrine:migrations:version",
+				"category": "Symfony"
+			},
+			{
+				"command": "SymfonyConsole.dql",
+				"title": "doctrine:query:dql",
+				"category": "Symfony"
+			},
+			{
+				"command": "SymfonyConsole.sql",
+				"title": "doctrine:query:sql",
+				"category": "Symfony"
+			},
+			{
+				"command": "SymfonyConsole.schemCreate",
+				"title": "doctrine:schema:create",
+				"category": "Symfony"
+			},
+			{
+				"command": "SymfonyConsole.schemDrop",
+				"title": "doctrine:schema:drop",
+				"category": "Symfony"
+			},
+			{
+				"command": "SymfonyConsole.schemUpdate",
+				"title": "doctrine:schema:update",
+				"category": "Symfony"
+			},
+			{
+				"command": "SymfonyConsole.schemValidate",
+				"title": "doctrine:schema:validate",
+				"category": "Symfony"
+			},
+			{
+				"command": "SymfonyConsole.lintCont",
+				"title": "lint:container",
+				"category": "Symfony"
+			},
+			{
+				"command": "SymfonyConsole.lintTwig",
+				"title": " lint:twig",
+				"category": "Symfony"
+			},
+			{
+				"command": "SymfonyConsole.lintXliff",
+				"title": " lint:xliff",
+				"category": "Symfony"
+			},
+			{
+				"command": "SymfonyConsole.lintYaml",
+				"title": " lint:yaml",
+				"category": "Symfony"
+			},
+			{
+				"command": "SymfonyConsole.makeAuth",
+				"title": " make:auth",
+				"category": "Symfony"
+			},
+			{
+				"command": "SymfonyConsole.makeCommand",
+				"title": " make:command",
+				"category": "Symfony"
+			},
+			{
+				"command": "SymfonyConsole.makeCrud",
+				"title": " make:crud",
+				"category": "Symfony"
+			},
+			{
+				"command": "SymfonyConsole.makeFixtures",
+				"title": " make:fixtures",
+				"category": "Symfony"
+			},
+			{
+				"command": "SymfonyConsole.makeForm",
+				"title": " make:form",
+				"category": "Symfony"
+			},
+			{
+				"command": "SymfonyConsole.makeFun",
+				"title": " make:functional-test",
+				"category": "Symfony"
+			},
+			{
+				"command": "SymfonyConsole.makeMig",
+				"title": " make:migration",
+				"category": "Symfony"
+			},
+			{
+				"command": "SymfonyConsole.makeReg",
+				"title": " make:registration-form",
+				"category": "Symfony"
+			},
+			{
+				"command": "SymfonyConsole.makeSub",
+				"title": " make:subscriber",
+				"category": "Symfony"
+			},
+			{
+				"command": "SymfonyConsole.makeTwigExe",
+				"title": " make:twig-extension",
+				"category": "Symfony"
+			},
+			{
+				"command": "SymfonyConsole.makeTest",
+				"title": " make:unit-test",
+				"category": "Symfony"
+			},
+			{
+				"command": "SymfonyConsole.makeUser",
+				"title": " make:user",
+				"category": "Symfony"
+			},
+			{
+				"command": "SymfonyConsole.makeVal",
+				"title": " make:validator",
+				"category": "Symfony"
+			},
+			{
+				"command": "SymfonyConsole.makeVot",
+				"title": " make:voter",
+				"category": "Symfony"
+			},
+			{
+				"command": "SymfonyConsole.makeNor",
+				"title": " make:serializer:normalizer",
+				"category": "Symfony"
+			},
+			{
+				"command": "SymfonyConsole.makeEncoder",
+				"title": " make:serializer:encoder",
+				"category": "Symfony"
+			},
+			{
+				"command": "SymfonyConsole.decToLoc",
+				"title": " secrets:decrypt-to-local ",
+				"category": "Symfony"
+			},
+			{
+				"command": "SymfonyConsole.encToLoc",
+				"title": " secrets:encrypt-from-local",
+				"category": "Symfony"
+			},
+			{
+				"command": "SymfonyConsole.genKeys",
+				"title": " secrets:generate-keys",
+				"category": "Symfony"
+			},
+			{
+				"command": "SymfonyConsole.secList",
+				"title": " secrets:list",
+				"category": "Symfony"
+			},
+			{
+				"command": "SymfonyConsole.secRemove",
+				"title": " secrets:remove",
+				"category": "Symfony"
+			},
+			{
+				"command": "SymfonyConsole.secSet",
+				"title": " secrets:set",
+				"category": "Symfony"
+			},
+			{
+				"command": "SymfonyConsole.secEncode",
+				"title": " security:encode-password",
+				"category": "Symfony"
+			},
+			{
+				"command": "SymfonyConsole.serverDump",
+				"title": " server:dump",
+				"category": "Symfony"
+			},
+			{
+				"command": "SymfonyConsole.serverLog",
+				"title": " server:log",
+				"category": "Symfony"
+			},
+			{
+				"command": "SymfonyConsole.transUpdate",
+				"title": " translation:update",
+				"category": "Symfony"
+			}
+		]
+	},
+	"scripts": {
+		"lint": "eslint .",
+		"pretest": "yarn run lint",
+		"test": "node ./test/runTest.js"
+	},
+	"devDependencies": {
+		"@types/glob": "^7.1.1",
+		"@types/mocha": "^7.0.1",
+		"@types/node": "^12.11.7",
+		"@types/vscode": "^1.43.0",
+		"eslint": "^6.8.0",
+		"glob": "^7.1.6",
+		"mocha": "^7.0.1",
+		"typescript": "^3.7.5",
+		"vscode-test": "^1.3.0"
+	},
+	"extensionPack": [
+		"nadim-vscode.symfony-code-snippets"
+	]
+}

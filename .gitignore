@@ -1,0 +1,11 @@
+node_modules
+.vscode-test/
+*.vsix
+.vscode/
+.vscode/**
+.jshintrc
+.eslintrc.json
+.vscodeignore
+jsconfig.json 
+**.js
+test
