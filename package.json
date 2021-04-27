@@ -1,13 +1,29 @@
 {
 	"name": "symfony-super-console",
 	"displayName": "Symfony Console Run All Symfony Commands",
-	"description": "",
+	"description": "Run all Symfony commands from VsCode UI without writing any line.",
+	"publisher": "nadim-vscode",
+	"author": {
+		"name": "Nadim Al Abdou",
+		"url": "https://nalabdou.com"
+	},
+	"homepage": "https://github.com/nalabdou/Symfony-super-console/blob/master/README.md",
+	"license": "SEE LICENSE IN LICENSE",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/nalabdou/Symfony-super-console"
+	},
+	"bugs": "https://github.com/nalabdou/Symfony-super-console/issues",
 	"version": "1.0.0",
 	"engines": {
 		"vscode": "^1.43.0"
 	},
 	"categories": [
 		"Other"
+	],
+	 "keywords": [
+        	"symfony",
+        	"php"
 	],
 	"activationEvents": [
 		"*"
