@@ -13,6 +13,13 @@
 
 ![Image-of-Snippets-comments](https://res.cloudinary.com/nalabdou/image/upload/v1585742465/commandp.gif)
 
+### Set the Console Path
+in your settings.json file
+```json
+    "superConsole.path": "your console path default is php bin/console"
+```
+
+
 ### List Of Availables Commands
 
 `#`|command

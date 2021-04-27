@@ -14,16 +14,16 @@
 		"url": "https://github.com/nalabdou/Symfony-super-console"
 	},
 	"bugs": "https://github.com/nalabdou/Symfony-super-console/issues",
-	"version": "1.0.0",
+	"version": "1.1.0",
 	"engines": {
 		"vscode": "^1.43.0"
 	},
 	"categories": [
 		"Other"
 	],
-	 "keywords": [
-        	"symfony",
-        	"php"
+	"keywords": [
+		"symfony",
+		"php"
 	],
 	"activationEvents": [
 		"*"
@@ -123,6 +123,11 @@
 			{
 				"command": "SymfonyConsole.debugTwig",
 				"title": " debug:twig",
+				"category": "Symfony"
+			},
+			{
+				"command": "SymfonyConsole.debugvalidator",
+				"title": " debug:validator",
 				"category": "Symfony"
 			},
 			{
@@ -243,16 +248,6 @@
 			{
 				"command": "SymfonyConsole.migVersion",
 				"title": "doctrine:migrations:version",
-				"category": "Symfony"
-			},
-			{
-				"command": "SymfonyConsole.dql",
-				"title": "doctrine:query:dql",
-				"category": "Symfony"
-			},
-			{
-				"command": "SymfonyConsole.sql",
-				"title": "doctrine:query:sql",
 				"category": "Symfony"
 			},
 			{
@@ -425,7 +420,17 @@
 				"title": " translation:update",
 				"category": "Symfony"
 			}
-		]
+		],
+		"configuration": {
+			"title": "superConsole",
+			"properties": {
+				"superConsole.path": {
+					"type": "string",
+					"default": "php bin/console",
+					"description": "Set the another path to console"
+				}
+			}
+		}
 	},
 	"scripts": {
 		"lint": "eslint .",
